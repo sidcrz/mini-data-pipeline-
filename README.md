@@ -92,6 +92,7 @@ Component | Real-World Role
 
 Once you understand this small pipeline, you can scale it up easily — adding Airflow for scheduling, dbt for transformations, or Spark for big data processing.
 
+ <img width="972" height="276" alt="Screenshot 2025-10-22 at 12 10 08 AM" src="https://github.com/user-attachments/assets/d8cded58-f227-40e9-9a3c-8c69d33f6462" />
 
 ## 🧩 2. Run PostgreSQL in a Docker Container
 
@@ -107,6 +108,10 @@ docker run -d \
   -v pgdata:/var/lib/postgresql/data \
   postgres 
   ```
+ 
+
+
+
 
 Explanation:
 ```
@@ -132,6 +137,8 @@ xxxxxx         postgres   Up ...          0.0.0.0:5432->5432/tcp   postgres
 
 Next, I created a Python virtual environment for this project.  
 It’s good practice to keep dependencies isolated and organized.
+
+<img width="1440" height="594" alt="Screenshot 2025-10-22 at 12 13 49 AM" src="https://github.com/user-attachments/assets/1b7c3ec1-f702-4951-ac9c-927f09c0d43f" />
 
 sudo apt install python3-venv -y
 python3 -m venv venv
@@ -215,6 +222,9 @@ Output:
   3 | CLARA  | UK
 (3 rows)
 ```
+<img width="807" height="293" alt="Screenshot 2025-10-22 at 12 12 43 AM" src="https://github.com/user-attachments/assets/cbd9bfe7-685d-4692-bd96-2e382132a4a2" />
+
+
 ✅ The ETL worked perfectly — data extracted, cleaned, and stored successfully.
 
 ---
@@ -228,17 +238,6 @@ mini-data-pipeline/
 ├── .gitignore
 ├── Dockerfile (optional)
 ├── README.md
-└── screenshots/
-    ├── 01_vm_created.png
-    ├── 02_vm_ssh.png
-    ├── 03_docker_ready.png
-    ├── 04_postgres_pull.png
-    ├── 05_postgres_running.png
-    ├── 06_venv_active.png
-    ├── 07_pip_installed.png
-    ├── 08_etl_success.png
-    └── 09_sql_output.png
-
 ```
 This organization keeps the project clean, reproducible, and ready for version control.
 
