@@ -126,10 +126,12 @@ Explanation:
 Verify it’s running:
 
 docker ps
-
+```
 Expected:
 CONTAINER ID   IMAGE      STATUS          PORTS                    NAMES
 xxxxxx         postgres   Up ...          0.0.0.0:5432->5432/tcp   postgres
+
+```
 
 ---
 
